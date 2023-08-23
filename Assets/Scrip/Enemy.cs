@@ -10,8 +10,8 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {  
     public static Enemy Instance;
-    [SerializeField] int hp = 100;
-    [SerializeField]Slider hpSlider;
+    [SerializeField] int maxhp = 100;
+    int hp;   
     [SerializeField] Animator enemyanin;    
     [SerializeField] Transform play;
     NavMeshAgent agent;    
@@ -30,24 +30,22 @@ public class Enemy : MonoBehaviour
     {        
         
         agent = GetComponent<NavMeshAgent>();
-        hpSlider.maxValue = hp;
+       
         enemyanin = GetComponent<Animator>();
-        
+        hp = maxhp;
     }
 
     
     void Update()
-    {       
-        
-        hpSlider.value = hp;
-        AutoEnemy();   
-        
+    {             
+        AutoEnemy();          
     }   
 
     // nhan damage
     public void TakeDamage(int dame)
     {        
         hp -= dame;
+        UIManager.Instance.InfoEnemyOn(gameObject.name,maxhp,hp);
         if (move)
         {
             aggroRange += 20;
@@ -55,12 +53,12 @@ public class Enemy : MonoBehaviour
         }
         
         if (hp <= 0)
-        {            
+        {
+            UIManager.Instance.InfoEnemyOff();
             ItemEnemy.Instance.RandomItem(transform.position);
             InstanEnemy.Instance.EnemyDie();
             Destroy(gameObject);           
-        }
-        
+        }       
     }
 
 

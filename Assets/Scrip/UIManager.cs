@@ -19,6 +19,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject timeSKK;
     [SerializeField] GameObject timeSKL;
     [SerializeField] GameObject gameover;
+    [SerializeField] GameObject infoenemmy;
+    [SerializeField] Slider HpEnemy;
+    [SerializeField] TMP_Text nameEnemy;
+    float timeofinfo = 0f;
     private void Awake()
     {
         Instance = this;
@@ -29,17 +33,23 @@ public class UIManager : MonoBehaviour
         HPpl.maxValue = Player.Instance.MaxHPPlayer();
         gameover.SetActive(false); 
         Time.timeScale = 1.0f;
+        infoenemmy.SetActive(false);
     }
     
     // Update is called once per frame
     void Update()
     {      
-        GameUI();        
+        GameUI();   
+        
     }
 
     public void GameUI()
     {
-        
+        timeofinfo += Time.deltaTime;
+        if (timeofinfo > 10f)
+        {
+            infoenemmy.SetActive(false);
+        }        
         HPpl.value = Player.Instance.HPPlayer();       
         timeJ.fillAmount = 0.25f * Animation.instance.TimeJ();
         timeK.fillAmount = 0.125f * Animation.instance.TimeK();
@@ -92,5 +102,22 @@ public class UIManager : MonoBehaviour
     {
         gameover.SetActive(true);
         Time.timeScale = 0f;
+    }
+    public void InfoEnemyOn(string name, int maxhp,int hp)
+    {
+        SetTimeInfo();
+        HpEnemy.maxValue = maxhp;
+        HpEnemy.value = hp;
+        nameEnemy.text = name.ToString();
+    }
+    public void InfoEnemyOff()
+    {
+        infoenemmy.SetActive(false);
+    }
+    public void SetTimeInfo()
+    {
+        timeofinfo = 0f;
+        infoenemmy.SetActive(true);
+        
     }
 }

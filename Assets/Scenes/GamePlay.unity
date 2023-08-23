@@ -1261,7 +1261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (9)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1550,11 +1550,11 @@ Transform:
   - {fileID: 296011262}
   - {fileID: 830381809}
   - {fileID: 1982717561}
+  - {fileID: 1532704747}
   - {fileID: 1959478125}
   - {fileID: 664107648}
-  - {fileID: 1532704747}
-  - {fileID: 1815971247}
   - {fileID: 709834834}
+  - {fileID: 1815971247}
   m_Father: {fileID: 1501499886}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3680,7 +3680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (25)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5021,7 +5021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (14)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6610,7 +6610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (16)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8941,7 +8941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (21)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9862,7 +9862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (26)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13178,7 +13178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (11)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -14863,7 +14863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (16)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16296,7 +16296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (11)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17667,7 +17667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (14)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -18616,7 +18616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (5)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -20599,7 +20599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (22)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -21446,7 +21446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (13)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22670,7 +22670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (27)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -24442,7 +24442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (7)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25448,7 +25448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (17)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -25556,6 +25556,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1076987326, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076987326, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199715656, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3682450494622162455, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -25601,14 +25613,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5012236975042044552, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5012236975042044552, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5012236975042044552, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1482340705}
@@ -25616,54 +25620,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 2030039533}
-    - target: {fileID: 5012236975042044552, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OffTimeScale
-      objectReference: {fileID: 0}
-    - target: {fileID: 5012236975042044552, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 5012236975042044552, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5012236975042044552, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 5012236975084676211, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1482340705}
-    - target: {fileID: 5012236975084676211, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ATKPL
-      objectReference: {fileID: 0}
     - target: {fileID: 5012236975159559727, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1482340705}
-    - target: {fileID: 5012236975159559727, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BTSkillL
-      objectReference: {fileID: 0}
     - target: {fileID: 5012236975993791190, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1482340705}
-    - target: {fileID: 5012236975993791190, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BTSkillK
-      objectReference: {fileID: 0}
     - target: {fileID: 5012236976335654601, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1482340705}
-    - target: {fileID: 5012236976335654601, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BTSkillJ
-      objectReference: {fileID: 0}
     - target: {fileID: 5012236976818569642, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -25672,17 +25644,9 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7866031081239285036, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7936768014250086136, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
       propertyPath: m_Name
       value: UICanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 7936768014250086136, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
@@ -26963,7 +26927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (12)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28769,7 +28733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (10)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30089,7 +30053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (18)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -30614,6 +30578,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1199715656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1199715656, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
+  m_PrefabInstance: {fileID: 964737466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1199715658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1199715658, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
+  m_PrefabInstance: {fileID: 964737466}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199715656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1200760892
 GameObject:
   m_ObjectHideFlags: 0
@@ -31299,7 +31279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (6)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -32300,7 +32280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (20)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -33702,7 +33682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (9)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -35065,7 +35045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (21)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -35750,7 +35730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (5)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -36902,7 +36882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (23)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -40909,7 +40889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (4)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -42079,7 +42059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (6)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -44454,7 +44434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (10)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -46045,7 +46025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (12)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -48047,7 +48027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631090750145866264, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie (13)
+      value: Parasite L Starkie
       objectReference: {fileID: 0}
     - target: {fileID: 8864951721862125741, guid: 78765758238fcea46a24bef97a03bfb3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -49093,6 +49073,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad7a1cffb2556547a8b7e60fd320431, type: 3}
+--- !u!114 &2032319903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2032319903, guid: 25f5b4506ff1de24db40c321a9dde277, type: 3}
+  m_PrefabInstance: {fileID: 964737466}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2036419120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50435,7 +50426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374041579910680857, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_Name
-      value: Zombiegirl W Kurniawan (20)
+      value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
     - target: {fileID: 6549741309368922622, guid: 7a863630046e8a947ba076697361fe02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -51646,6 +51637,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 424916627}
     - target: {fileID: 963942954661212737, guid: 79cd72487da99d74eb8873511cccb36d, type: 3}
+      propertyPath: HpEnemy
+      value: 
+      objectReference: {fileID: 1199715658}
+    - target: {fileID: 963942954661212737, guid: 79cd72487da99d74eb8873511cccb36d, type: 3}
       propertyPath: UIskill
       value: 
       objectReference: {fileID: 421188778}
@@ -51670,9 +51665,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1822067063}
     - target: {fileID: 963942954661212737, guid: 79cd72487da99d74eb8873511cccb36d, type: 3}
+      propertyPath: nameEnemy
+      value: 
+      objectReference: {fileID: 2032319903}
+    - target: {fileID: 963942954661212737, guid: 79cd72487da99d74eb8873511cccb36d, type: 3}
       propertyPath: countEnemy
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 963942954661212737, guid: 79cd72487da99d74eb8873511cccb36d, type: 3}
+      propertyPath: infoenemmy
+      value: 
+      objectReference: {fileID: 1199715656}
     - target: {fileID: 963942954661212738, guid: 79cd72487da99d74eb8873511cccb36d, type: 3}
       propertyPath: m_RootOrder
       value: 1

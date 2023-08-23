@@ -9,9 +9,9 @@ using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
-    
-    [SerializeField] int hpboss = 1000;
-    [SerializeField] Slider hpSliderboss;
+    int hpboss;
+    [SerializeField] int hpbossmax = 1000;
+    //[SerializeField] Slider hpSliderboss;
     [SerializeField] Animator enemyaninboss;
     [SerializeField] GameObject door;
     NavMeshAgent agentboss;
@@ -26,9 +26,8 @@ public class Boss : MonoBehaviour
 
     void Start()
     {
-        
-        agentboss = GetComponent<NavMeshAgent>();
-        hpSliderboss.maxValue = hpboss;
+        hpboss = hpbossmax;
+        agentboss = GetComponent<NavMeshAgent>();        
         enemyaninboss = GetComponent<Animator>();
         
         
@@ -37,8 +36,7 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        hpSliderboss.value = hpboss;
+               
         AutoBoss();
     }
 
@@ -46,8 +44,10 @@ public class Boss : MonoBehaviour
     public void TakeDamage(int dame)
     {
         hpboss -= dame;
+        UIManager.Instance.InfoEnemyOn(gameObject.name,hpbossmax,hpboss);
         if (hpboss <= 0)
         {
+            UIManager.Instance.InfoEnemyOff();
             Instantiate(door, transform.position + new Vector3(0f,1f,0f), transform.rotation);
             InstanEnemy.Instance.EnemyDie();                      
             Destroy(gameObject);
