@@ -48,8 +48,7 @@ public class Boss : MonoBehaviour
         if (hpboss <= 0)
         {
             UIManager.Instance.InfoEnemyOff();
-            Instantiate(door, transform.position + new Vector3(0f,1f,0f), transform.rotation);
-            InstanEnemy.Instance.EnemyDie();                      
+            Instantiate(door, transform.position + new Vector3(0f,1f,0f), transform.rotation);                                 
             Destroy(gameObject);
         }
     }
@@ -102,13 +101,13 @@ public class Boss : MonoBehaviour
     }
 
     // khong gian tan cong va di chuyen toi player
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRangeboss);
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, aggroRangeboss);
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawWireSphere(transform.position, attackRangeboss);
+    //    Gizmos.color = Color.yellow;
+    //    Gizmos.DrawWireSphere(transform.position, aggroRangeboss);
+    //}
 
 
 

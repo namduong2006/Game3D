@@ -5,25 +5,30 @@ using UnityEngine;
 using UnityEngine.UI;
 using static Cinemachine.AxisState;
 using UnityEditor;
-
+using UnityEngine.AI;
+using static UnityEngine.InputManagerEntry;
 
 public class Player : MonoBehaviour
 {   
+    
     public static Player Instance;   
     [SerializeField] Rigidbody rb;
-    public int maxHP = 1000; 
+    int maxHP = 1000; 
     public int HP;   
     float speed = 2.5f;
     public float move;
-    float speedro = 150f;       
-    bool gameover = false;      
-    bool jump;
-    float highjump = 6f;
-    bool press = true;   
+    public float speedro = 600f;       
+    bool gameover = false;               
     [SerializeField]FixedJoystick joystick;   
     DamageWeapon damageweapon;
     [SerializeField] GameObject buff;
-    
+    public enum MoveMode
+    {
+        Keyboard,
+        Joystick
+    }
+    public MoveMode currentMoveMode = MoveMode.Joystick;
+
     private void Awake()
     {
         Instance = this;
@@ -86,8 +91,7 @@ public class Player : MonoBehaviour
     {        
         HP -= enydamage;
         if (HP <= 0)
-        {
-            
+        {           
             Animation.instance.Death();
             StartCoroutine(TimeEnd());           
         }
@@ -101,7 +105,7 @@ public class Player : MonoBehaviour
         }
     }
     public void OnBuffHP()
-    {
+    {       
         buff.SetActive(true);
         StartCoroutine(TimeOffBuff());
     }
@@ -139,7 +143,14 @@ public class Player : MonoBehaviour
         damageweapon.EndDamageWeapon();
     }
     
-    
+    void ComboPlSword()
+    {
+        Animation.instance.CheckComboSword();
+    }
+    void ComboPlStick()
+    {
+        Animation.instance.CheckComboStick();
+    }
     void ComboPl()
     {
         Animation.instance.CheckCombo();
@@ -147,20 +158,7 @@ public class Player : MonoBehaviour
     void ResetCombo()
     {
         Animation.instance.ResetCombo();
-    }
-    
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Terrain"))
-        {
-            jump = true;
-        }
-        
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        jump = false;
-    }
+    }  
     public int MaxHPPlayer()
     {
         return maxHP;
@@ -170,80 +168,66 @@ public class Player : MonoBehaviour
         return HP;
     }
     
+    // Canvas GameOver hien len sau 1s
     private IEnumerator TimeEnd()
     {
         yield return new WaitForSeconds(1f);
         UIManager.Instance.GameOver();
 
     }
+
+    // Tat buff HP sau 1.5s
     private IEnumerator TimeOffBuff()
     {
         yield return new WaitForSeconds(1.5f);
         buff.SetActive(false);
+        
     }
     private void MovePlayer()
     {
-        // di chuyen va xoay
-        
-        
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
-        transform.Rotate(0, h * Time.deltaTime * speedro, 0);
-        transform.Translate(0, 0, v * Time.deltaTime * speed);
-        float vjoy = joystick.Vertical;
-        transform.Rotate(0, joystick.Horizontal * Time.deltaTime * speedro, 0);
-        transform.Translate(0, 0, joystick.Vertical * Time.deltaTime * speed);
-        if (v == 0)
+        // di chuyen joystick va keyboard  
+        if (currentMoveMode == MoveMode.Joystick)
         {
-            move = vjoy;
-        }
-        else if (vjoy == 0)
-        {
-            move = v;
-        }
-        else if(v != 0 && vjoy != 0)
-        {
-            move = v;
-            
-        }
-       
-        
-        // jump
-
-        if (jump == true)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
+            float joyh = joystick.Horizontal;
+            float joyv = joystick.Vertical;
+            rb.velocity = new Vector3(joyh * speed, rb.velocity.y, joyv * speed);
+            if (joyh != 0 || joyv != 0)
             {
-                Animation.instance.JumpTrue();
-                rb.AddForce(new Vector3(0f, highjump, 0f), ForceMode.Impulse);
+                transform.rotation = Quaternion.LookRotation(rb.velocity);
             }
-
-            Animation.instance.GroundingTrue();
+            float _joyh = Mathf.Abs(joyh);
+            float _joyv = Mathf.Abs(joyv);
+            move =Mathf.Clamp01( _joyh + _joyv);
+            joystick.gameObject.SetActive(true);
         }
-        else
+        else if (currentMoveMode == MoveMode.Keyboard)
         {
-            Animation.instance.JumpFalse();
-            Animation.instance.GroundingFalse();
+            float h = Input.GetAxis("Horizontal");
+            float v = Input.GetAxis("Vertical");
+            Vector3 movement = new Vector3(h,0f,v);  
+            movement.Normalize();
+            transform.Translate( movement * Time.deltaTime * speed,Space.World);
+            if (movement != Vector3.zero)
+            {
+                Quaternion rotation = Quaternion.LookRotation(movement, Vector3.up);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, speedro * Time.deltaTime);
+            }
+            float _h=Mathf.Abs(h);
+            float _v=Mathf.Abs(v);
+            move =Mathf.Clamp01( _v+_h);
+            joystick.gameObject.SetActive(false); 
         }
+        
     }
-    public void OffPress()
-    {
-        press = false;
-    }
-    public void OnPress()
-    {
-        press = true;
-    }
-    public bool Press()
-    {
-        return press;
-    }
+    
     public void OffMove()
     {
         speed = 0;
+        speedro = 0;
     }
     public void OnMove()
     {
         speed = 2.5f;
+        speedro = 600f;
     }
 }

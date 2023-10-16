@@ -11,16 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlay.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/LV2.unity
-    guid: adc2068299aec784d9b29d8ecd991ced
-  - enabled: 0
-    path: Assets/Scenes/LV3.unity
-    guid: 59544d7f6f97a3343947953c4a0c2a7f
-  - enabled: 0
-    path: Assets/Scenes/Demo_scene.unity
-    guid: 2b90041c02fa0424794af2d500508091
-  - enabled: 0
-    path: Assets/Scenes/Rung.unity
-    guid: 275a29409308e634aa2aae331e6db8ba
   m_configObjects: {}

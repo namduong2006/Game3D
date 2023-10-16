@@ -5,10 +5,12 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
-
+using TMPro;
 
 public class Enemy : MonoBehaviour
-{  
+{
+    
+    
     public static Enemy Instance;
     [SerializeField] int maxhp = 100;
     int hp;   
@@ -45,6 +47,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int dame)
     {        
         hp -= dame;
+        
         UIManager.Instance.InfoEnemyOn(gameObject.name,maxhp,hp);
         if (move)
         {
@@ -55,14 +58,13 @@ public class Enemy : MonoBehaviour
         if (hp <= 0)
         {
             UIManager.Instance.InfoEnemyOff();
-            ItemEnemy.Instance.RandomItem(transform.position);
-            InstanEnemy.Instance.EnemyDie();
+            ItemEnemy.Instance.RandomItem(transform.position);           
             Destroy(gameObject);           
         }       
     }
+   
 
 
-    
     void StartDamege()
     {
         damageofeneny.GetComponentInChildren<Enemydamage>().StartDamageEnemy();
@@ -102,13 +104,13 @@ public class Enemy : MonoBehaviour
     }
 
     // khong gian tan cong va di chuyen toi player
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
-        Gizmos.color= Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, aggroRange);
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawWireSphere(transform.position, attackRange);
+    //    Gizmos.color= Color.yellow;
+    //    Gizmos.DrawWireSphere(transform.position, aggroRange);
+    //}
 
     
     

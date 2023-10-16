@@ -134518,7 +134518,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.0666667
+  - time: 1.6666666
     functionName: OnAtk6
     data: 
     objectReferenceParameter: {fileID: 0}

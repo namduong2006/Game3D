@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] Image timeJ;
     [SerializeField] Image timeK;
     [SerializeField] Image timeL;
-    [SerializeField] GameObject UIskill;
+    //[SerializeField] GameObject UIskill;
     [SerializeField] GameObject timeSKJ;
     [SerializeField] GameObject timeSKK;
     [SerializeField] GameObject timeSKL;
@@ -22,34 +22,45 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject infoenemmy;
     [SerializeField] Slider HpEnemy;
     [SerializeField] TMP_Text nameEnemy;
-    float timeofinfo = 0f;
+    [SerializeField] GameObject[] Skill;
+    [SerializeField] GameObject timeSkill;    
     private void Awake()
-    {
+    {        
         Instance = this;
     }
     void Start()
     {      
-        UIskill.SetActive(false);
+        timeSkill.SetActive(false);
+        //UIskill.SetActive(false);
         HPpl.maxValue = Player.Instance.MaxHPPlayer();
         gameover.SetActive(false); 
         Time.timeScale = 1.0f;
         infoenemmy.SetActive(false);
+        Skill[0].SetActive(true);
     }
-    
+    private void LateUpdate()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {      
-        GameUI();   
-        
+        GameUI();       
     }
-
-    public void GameUI()
+    public void OnSkill(int stt)
     {
-        timeofinfo += Time.deltaTime;
-        if (timeofinfo > 10f)
+        for (int i = 0; i < Skill.Length; i++)
         {
-            infoenemmy.SetActive(false);
-        }        
+            Skill[i].SetActive(false);
+        }
+        Skill[stt].SetActive(true);
+    }
+    public void OnTimeSkill()
+    {
+        timeSkill.SetActive(true);
+    }
+    public void GameUI()
+    {       
         HPpl.value = Player.Instance.HPPlayer();       
         timeJ.fillAmount = 0.25f * Animation.instance.TimeJ();
         timeK.fillAmount = 0.125f * Animation.instance.TimeK();
@@ -78,10 +89,10 @@ public class UIManager : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
-    public void UISkill()
-    {
-        UIskill.SetActive(true);
-    }    
+    //public void UISkill()
+    //{
+    //    UIskill.SetActive(true);
+    //}    
     public void ATKPL()
     {
         Animation.instance.AtkPL();
@@ -105,19 +116,26 @@ public class UIManager : MonoBehaviour
     }
     public void InfoEnemyOn(string name, int maxhp,int hp)
     {
-        SetTimeInfo();
+        infoenemmy.SetActive(true);
+        
         HpEnemy.maxValue = maxhp;
         HpEnemy.value = hp;
         nameEnemy.text = name.ToString();
+        StartCoroutine(TimeOffInfoEnemy());
+
     }
     public void InfoEnemyOff()
     {
         infoenemmy.SetActive(false);
     }
-    public void SetTimeInfo()
+    //public void SetTimeInfoOff()
+    //{
+    //    infoenemmy.SetActive(true);
+    //    StartCoroutine(TimeOffInfoEnemy());
+    //}
+    private IEnumerator TimeOffInfoEnemy()
     {
-        timeofinfo = 0f;
-        infoenemmy.SetActive(true);
-        
-    }
+        yield return new WaitForSeconds(15f);
+        infoenemmy.SetActive(false);
+    }   
 }

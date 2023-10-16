@@ -12,6 +12,7 @@ public class PlayerDamageFoot : MonoBehaviour
     [SerializeField] Vector3 sizebox;
     [SerializeField] Transform vfx;
     [SerializeField] GameObject vfxfoot;
+    [SerializeField] float radius;
     private void Awake()
     {
         Instace = this;
@@ -25,10 +26,44 @@ public class PlayerDamageFoot : MonoBehaviour
     private void Update()
     {
 
+        //if (candealdame)
+        //{
+
+        //    Collider[] colliders = Physics.OverlapBox(transform.position, sizebox);
+
+        //    foreach (Collider collider in colliders)
+        //    {
+        //        if (!hasdealdame.Contains(collider.gameObject))
+        //        {
+
+        //            if (collider.TryGetComponent(out Enemy enemy))
+        //            {
+        //                enemy.TakeDamage(damage);
+        //                Insvfxfoot();
+        //            }
+
+
+        //            if (collider.TryGetComponent(out Boss boss))
+        //            {
+        //                boss.TakeDamage(damage);
+        //                Insvfxfoot();
+        //            }
+        //            if (collider.TryGetComponent(out ItemBox box))
+        //            {
+        //                box.TakeDamage(damage);
+        //                Insvfxfoot();
+        //            }
+
+        //                hasdealdame.Add(collider.gameObject);
+        //        }
+        //    }
+
+        //}
+        
         if (candealdame)
         {
-            
-            Collider[] colliders = Physics.OverlapBox(transform.position, sizebox);
+
+            Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
             foreach (Collider collider in colliders)
             {
@@ -53,7 +88,7 @@ public class PlayerDamageFoot : MonoBehaviour
                         Insvfxfoot();
                     }
 
-                        hasdealdame.Add(collider.gameObject);
+                    hasdealdame.Add(collider.gameObject);
                 }
             }
 
@@ -77,8 +112,9 @@ public class PlayerDamageFoot : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position, sizebox);
+        //Gizmos.color = Color.red;
+        //Gizmos.DrawWireCube(transform.position, sizebox);
+        Gizmos.DrawSphere(transform.position,radius);
     }
 
 

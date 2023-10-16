@@ -13,21 +13,25 @@ public class ItemEnemy : MonoBehaviour
     }
     
     public void RandomItem(Vector3 positionenemy)
-    {       
-        int it = Random.Range(0, items.Length);
-        GameObject item = items[it];       
-        Vector3 newpoint = new Vector3(positionenemy.x, positionenemy.y, positionenemy.z);
-        switch (it)
+    {              
+        Vector3 newpoint = new Vector3(positionenemy.x, positionenemy.y, positionenemy.z);        
+        int it = Random.Range(1,101); //lay gai tri tu 1 den 100       
+        if (it <= 70)
         {
-            case 0:
-                newpoint.y = 0f; break;
-            case 1:
-                newpoint.y = - 0.5f; break;
-            case 2:
-                newpoint.y =  0.5f; break;
-
+            return;
         }
-        pointitem = newpoint;
-        Instantiate(item,pointitem, Quaternion.identity);
+        else if (it <= 85)
+        {
+            Instantiate(items[0], new Vector3(positionenemy.x, 0.5f, positionenemy.z), transform.rotation);
+        }
+        else if(it <= 95)
+        {
+            Instantiate(items[1], new Vector3(positionenemy.x, 0f, positionenemy.z), transform.rotation);
+        }
+        else if (it <= 100)
+        {
+            Instantiate(items[2], new Vector3(positionenemy.x, -0.5f, positionenemy.z), transform.rotation);
+        }
+        
     }
 }

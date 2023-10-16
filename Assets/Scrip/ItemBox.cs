@@ -19,24 +19,31 @@ public class ItemBox : MonoBehaviour
     
     void RandomItem()
     {
-        int it = Random.Range(0,items.Length);
-        GameObject item = items[it];
-        Vector3 newpoint = new Vector3(pointitem.position.x,pointitem.position.y,pointitem.position.z);        
-        switch (it)
+        int it = Random.Range(1,101);
+        if (it <= 75)
         {
-            case 0:
-                newpoint.y = pointitem.position.y; break;
-            case 1:
-                newpoint.y = pointitem.position.y - 0.5f; break;
-            case 2:
-                newpoint.y = pointitem.position.y + 0.5f; break;
-            case 3:
-                newpoint.y = pointitem.position.y + 1f; break;
-            case 4:
-                newpoint.y = pointitem.position.y + 1f; break;
+            return;
+        }
+        else if (it <= 80)
+        {
+            Instantiate(items[0], transform.position, transform.rotation);
+        }
+        else if( it <= 85)
+        {
+            Instantiate(items[1], new Vector3(transform.position.x, transform.position.y- 0.5f, transform.position.z), transform.rotation);
+        }
+        else if (it <= 90)
+        {
+            Instantiate(items[2], new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), transform.rotation);
+        }
+        else if (it <= 95)
+        {
+            Instantiate(items[3], new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z), transform.rotation);
+        }
+        else if (it <= 100)
+        {
+            Instantiate(items[4], new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z), transform.rotation);
         }       
-        pointitem.position = newpoint;
-        Instantiate(item,pointitem.position,pointitem.rotation);
     }
     public void TakeDamage(int damage)
     {

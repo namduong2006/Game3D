@@ -17,7 +17,7 @@ public class BulletStick : MonoBehaviour
     private void Awake()
     {
         instance = this;
-    }
+    }    
     public void InstanBulletStick()
     {
         Instantiate(bulletstick1,transform.position,transform.rotation);

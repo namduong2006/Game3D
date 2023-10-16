@@ -7,12 +7,28 @@ using UnityEngine.UI;
 public class UIHome : MonoBehaviour
 {
     public static UIHome Instance;
-    
+    [SerializeField] GameObject loading;
+    [SerializeField] Image loadingbarfill;
     private void Awake()
     {
         Instance = this;
+        Time.timeScale = 0.1f;
     }
-    
+    public void LoadingScene(string name)
+    {
+        StartCoroutine(LoadSceneAsync(name));       
+    }
+    IEnumerator LoadSceneAsync(string namescene)
+    {
+        AsyncOperation opration = SceneManager.LoadSceneAsync(namescene);
+        loading.SetActive(true);
+        while (!opration.isDone)
+        {           
+            float progressvalue = Mathf.Clamp01(opration.progress/0.9f);
+            loadingbarfill.fillAmount = progressvalue;
+            yield return null;
+        }       
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene("GamePlay");      

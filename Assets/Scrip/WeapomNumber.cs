@@ -10,22 +10,26 @@ public class WeapomNumber : MonoBehaviour
     WeaponPL plweapon;
     public int number;
     UIManager manager;
+    
     private void Awake()
     {
         instance = this;
     }
-    public int Number() { return number; }
-    private void OnTriggerEnter(Collider other)
+    
+    //public int Number() { return number; }
+    private void OnTriggerStay(Collider other)
     {
         
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.G))
         {
             
             manager = FindObjectOfType<UIManager>();
-            manager.UISkill();           
+            //manager.UISkill();
+            manager.OnTimeSkill();
+            manager.OnSkill(number+1);
             plweapon = FindObjectOfType<WeaponPL>();
             plweapon.ActivarArmar(number);           
-            Animation.instance.LayerIndex(number);
+            Animation.instance.LayerIndex(number);           
             Destroy(gameObject);
         }
     }   
